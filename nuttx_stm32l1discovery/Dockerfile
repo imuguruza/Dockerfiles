@@ -84,6 +84,4 @@ RUN cd tools/kconfig-frontends && \
 
 RUN cd nuttx && \
     tools/configure.sh ../configs/stm32ldiscovery/nsh && \
-
-#The .defconfig is wrong, so do not invoke main, otherwise will fail
-#    make
+    make
